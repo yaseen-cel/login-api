@@ -1,0 +1,22 @@
+<form method="post">
+    {% csrf_token %}
+  
+    <div class="container">
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+  
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required></div></br>
+  
+      <button type="submit">Login</button>
+    
+    </div>
+  
+
+</form>
+<div>
+    {% for message in messages %}
+    <h3>{{ message }}</h3>
+    {% endfor %}
+  
+  </div>
